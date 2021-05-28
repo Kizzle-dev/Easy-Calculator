@@ -7,17 +7,17 @@ namespace Easy_Calculator
         static void Main(string[] args)
         {
             // Commencement of Application Operation -Beginning of a conversation with the user
-            Console.WriteLine("Witaj w Aplikacji Kalkulator!");
+            Console.WriteLine("Welcome to the Calculator Application!");
             // First number
-            Console.WriteLine("Podaj prosze pierwsza liczbe!");
+            Console.WriteLine("Please enter the first number!");
             // Getting first number
             var numer1 = int.Parse(Console.ReadLine());
             // Second number
-            Console.WriteLine("Podaj prosze druga liczbe!");
+            Console.WriteLine("Please enter the second number!");
             // Getting second number
             var numer2 = int.Parse(Console.ReadLine());
             //Request for enforcement
-            Console.WriteLine("Co chcesz wykonać? Możesz '+', '-', '*'  oraz '/'.");
+            Console.WriteLine("What do you want to do? You can '+', '-', '*' and '/'.");
             // Getting request for enforcement
             var operation = Console.ReadLine();
             // Calculations
@@ -38,11 +38,11 @@ namespace Easy_Calculator
                     result = numer1 / numer2;
                     break;
                 default:
-                    throw new Exception("Niestety cos poszło nie tak");
+                    throw new Exception("Unfortunately, something went wrong");
             }
 
             //We display the result
-            Console.WriteLine($"Wynik twojego dzialania to: {result}.");
+            Console.WriteLine($"The result of your action is: {result}.");
 
 
 
