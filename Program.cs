@@ -41,7 +41,7 @@ namespace Easy_Calculator
                     throw new Exception("Niestety cos poszło nie tak");
             }
 
-            // Wyświetlamy otrzymany wynik
+            //We display the result
             Console.WriteLine($"Wynik twojego dzialania to: {result}.");
 
 
